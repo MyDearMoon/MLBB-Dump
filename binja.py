@@ -14,7 +14,7 @@ def run(bv):
     with open(json_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
-    methods = data.get('ScriptMethods', [])
+    methods = data.get('ScriptMethod', [])
     count = 0
     for m in methods:
         rva = m.get('Rva', 0)
@@ -30,5 +30,4 @@ def run(bv):
     print(f'[+] Imported {count} symbols into Binary Ninja')
 
 if __name__ == '__main__':
-    # When run inside Binary Ninja console: run(bv)
     pass

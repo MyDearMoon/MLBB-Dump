@@ -24,22 +24,20 @@ def run():
     with open(json_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
-    methods = data.get('ScriptMethods', [])
-    print(f'[+] Applying {len(methods)} method symbols to IDA...')
+    methods = data.get('ScriptMethod', [])
     count = 0
     for m in methods:
         rva = m.get('Rva', 0)
-        if rva == 0:
-            continue
+        if rva == 0: continue
         ea = base + rva
         name = m.get('Name', '').replace(' ', '_').replace('.', '_').replace('$', '_').replace('<', '_').replace('>', '_')
-        sig = m.get('Signature', '')
         set_name(ea, name)
+        sig = m.get('Signature', '')
         if sig:
             set_comment(ea, sig)
         count += 1
 
-    print(f'[+] Renamed {count} functions successfully in IDA.')
+    print(f'[+] Imported {count} symbols into IDA Pro')
 
 if __name__ == '__main__':
     run()

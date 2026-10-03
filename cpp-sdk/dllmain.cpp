@@ -9,16 +9,9 @@
 
 DWORD WINAPI MainThread(LPVOID lpParam)
 {
-    // 1. Wait for GameAssembly.dll to initialize
     while (!GetIl2CppBase()) {
         Sleep(100);
     }
-
-    // 2. Initialize hooking framework (e.g. MinHook)
-    // MH_Initialize();
-    // MH_CreateHook(reinterpret_cast<LPVOID>(GetIl2CppBase() + 0x123456), &Hooked_Method, reinterpret_cast<LPVOID*>(&Original_Method));
-    // MH_EnableHook(MH_ALL_HOOKS);
-
     return 0;
 }
 

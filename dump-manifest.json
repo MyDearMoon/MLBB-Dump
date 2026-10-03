@@ -1,0 +1,94 @@
+{
+  "ToolVersion": "1.4.0",
+  "Timestamp": "2026-10-03T03:23:02.1234043Z",
+  "MetadataVersion": 24.3,
+  "UnityVersion": "2019.4.33f1 (Moonton / MLBB HybridCLR)",
+  "Architecture": "Arm64",
+  "BinaryFormat": "Elf",
+  "AnalysisMode": "MetadataOnly",
+  "AddressConfidence": "Unknown",
+  "RecoveryMethod": "Standard",
+  "RecoveryOffset": 0,
+  "RecoveryConfidence": 100,
+  "InputBinaryPath": "C:\\Users\\MyDearMoon\\Documents\\MLBB_Dumps\\staging\\libil2cpp.so",
+  "InputBinarySha256": "a6a8768ea5d45ceabc7ab6520e7d6aa205d6d53d5f8add48544fe6104bfdd6e2",
+  "InputMetadataPath": "C:\\Users\\MyDearMoon\\Documents\\MLBB_Dumps\\staging\\global-metadata.dat",
+  "InputMetadataSha256": "28ed14429467bad82d0f29d953e1be323e742a3d61c6981e488dca86bcf6b8cd",
+  "GeneratedFiles": [
+    "C:\\Users\\MyDearMoon\\Documents\\GitHub\\MLBB-Dump\\binja.py",
+    "C:\\Users\\MyDearMoon\\Documents\\GitHub\\MLBB-Dump\\dump.cs",
+    "C:\\Users\\MyDearMoon\\Documents\\GitHub\\MLBB-Dump\\ghidra.py",
+    "C:\\Users\\MyDearMoon\\Documents\\GitHub\\MLBB-Dump\\ida.py",
+    "C:\\Users\\MyDearMoon\\Documents\\GitHub\\MLBB-Dump\\README.md",
+    "C:\\Users\\MyDearMoon\\Documents\\GitHub\\MLBB-Dump\\script.json",
+    "C:\\Users\\MyDearMoon\\Documents\\GitHub\\MLBB-Dump\\stringliteral.json",
+    "C:\\Users\\MyDearMoon\\Documents\\GitHub\\MLBB-Dump\\STRUCTURE.md",
+    "C:\\Users\\MyDearMoon\\Documents\\GitHub\\MLBB-Dump\\cpp-sdk\\dllmain.cpp",
+    "C:\\Users\\MyDearMoon\\Documents\\GitHub\\MLBB-Dump\\cpp-sdk\\il2cpp-init.h",
+    "C:\\Users\\MyDearMoon\\Documents\\GitHub\\MLBB-Dump\\cpp-sdk\\il2cpp.h",
+    "C:\\Users\\MyDearMoon\\Documents\\GitHub\\MLBB-Dump\\DummyDll\\Assembly-CSharp-firstpass.dll",
+    "C:\\Users\\MyDearMoon\\Documents\\GitHub\\MLBB-Dump\\DummyDll\\Assembly-CSharp.dll",
+    "C:\\Users\\MyDearMoon\\Documents\\GitHub\\MLBB-Dump\\DummyDll\\UnityEngine.CoreModule.dll",
+    "C:\\Users\\MyDearMoon\\Documents\\GitHub\\MLBB-Dump\\frida-runtime-dumper\\frida-dump-android.js",
+    "C:\\Users\\MyDearMoon\\Documents\\GitHub\\MLBB-Dump\\frida-runtime-dumper\\frida-dump-pc.js",
+    "C:\\Users\\MyDearMoon\\Documents\\GitHub\\MLBB-Dump\\frida-runtime-dumper\\run-android.bat"
+  ],
+  "ExporterResults": [
+    {
+      "Name": "C# Static Dump (dump.cs \u0026 script.json)",
+      "Success": true,
+      "GeneratedFiles": [
+        "C:\\Users\\MyDearMoon\\Documents\\GitHub\\MLBB-Dump\\dump.cs",
+        "C:\\Users\\MyDearMoon\\Documents\\GitHub\\MLBB-Dump\\script.json",
+        "C:\\Users\\MyDearMoon\\Documents\\GitHub\\MLBB-Dump\\stringliteral.json"
+      ],
+      "Error": null,
+      "Warnings": []
+    },
+    {
+      "Name": "Disassembler Scripts (IDA, Ghidra, Binary Ninja)",
+      "Success": true,
+      "GeneratedFiles": [
+        "C:\\Users\\MyDearMoon\\Documents\\GitHub\\MLBB-Dump\\ida.py",
+        "C:\\Users\\MyDearMoon\\Documents\\GitHub\\MLBB-Dump\\ghidra.py",
+        "C:\\Users\\MyDearMoon\\Documents\\GitHub\\MLBB-Dump\\binja.py"
+      ],
+      "Error": null,
+      "Warnings": []
+    },
+    {
+      "Name": "Dummy Assemblies (.dll stubs via Mono.Cecil)",
+      "Success": true,
+      "GeneratedFiles": [
+        "C:\\Users\\MyDearMoon\\Documents\\GitHub\\MLBB-Dump\\DummyDll\\Assembly-CSharp.dll",
+        "C:\\Users\\MyDearMoon\\Documents\\GitHub\\MLBB-Dump\\DummyDll\\Assembly-CSharp-firstpass.dll",
+        "C:\\Users\\MyDearMoon\\Documents\\GitHub\\MLBB-Dump\\DummyDll\\UnityEngine.CoreModule.dll"
+      ],
+      "Error": null,
+      "Warnings": []
+    },
+    {
+      "Name": "C\u002B\u002B Modding SDK (il2cpp.h \u0026 Visual Studio Scaffolding)",
+      "Success": true,
+      "GeneratedFiles": [
+        "C:\\Users\\MyDearMoon\\Documents\\GitHub\\MLBB-Dump\\cpp-sdk\\il2cpp.h",
+        "C:\\Users\\MyDearMoon\\Documents\\GitHub\\MLBB-Dump\\cpp-sdk\\il2cpp-init.h",
+        "C:\\Users\\MyDearMoon\\Documents\\GitHub\\MLBB-Dump\\cpp-sdk\\dllmain.cpp"
+      ],
+      "Error": null,
+      "Warnings": []
+    },
+    {
+      "Name": "Frida Scripts",
+      "Success": true,
+      "GeneratedFiles": [
+        "C:\\Users\\MyDearMoon\\Documents\\GitHub\\MLBB-Dump\\frida-runtime-dumper\\frida-dump-android.js",
+        "C:\\Users\\MyDearMoon\\Documents\\GitHub\\MLBB-Dump\\frida-runtime-dumper\\frida-dump-pc.js",
+        "C:\\Users\\MyDearMoon\\Documents\\GitHub\\MLBB-Dump\\frida-runtime-dumper\\run-android.bat"
+      ],
+      "Error": null,
+      "Warnings": []
+    }
+  ],
+  "Warnings": []
+}

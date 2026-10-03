@@ -1,4 +1,5 @@
-﻿#pragma once
+﻿// Auto-generated runtime address resolver
+#pragma once
 #include <cstdint>
 #if defined(_WIN32)
 #include <windows.h>
@@ -11,7 +12,6 @@ inline uintptr_t GetIl2CppBase()
 #if defined(_WIN32)
     return reinterpret_cast<uintptr_t>(GetModuleHandleA("GameAssembly.dll"));
 #else
-    // Linux / Android libil2cpp.so resolver
     return reinterpret_cast<uintptr_t>(dlopen("libil2cpp.so", RTLD_NOLOAD));
 #endif
 }
