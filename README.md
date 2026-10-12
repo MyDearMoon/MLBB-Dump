@@ -1,4 +1,4 @@
-﻿# Mobile Legends: Bang Bang (MLBB) IL2CPP Dump
+# Mobile Legends: Bang Bang (MLBB) IL2CPP Dump
 
 Extracted types, methods, fields, and symbols from Mobile Legends: Bang Bang (Android ARM64).
 
@@ -11,16 +11,17 @@ Generated using [Il2CppDumper](https://github.com/MyDearMoon/il2cpp-Dumper) with
 | Metric | Value |
 | :--- | :--- |
 | **Package ID** | `com.mobile.legends` |
+| **Game Version** | `v2.2.16.12322` (Build `211812322`) |
 | **Engine / Runtime** | Unity 2019.4.33f1 (Moonton / MLBB HybridCLR) |
 | **Target Architecture** | ARM64 (`arm64-v8a`) |
 | **Binary Format** | ELF (`libcsharp.so`, `libfirst.so`, `liblogic.so`) |
 | **Metadata Version** | v24.3 (Moonton Version 1024 Partitioned) |
 | **Assemblies Extracted** | 3 (`Assembly-CSharp.dll`, `Assembly-CSharp-firstpass.dll`, `UnityEngine.CoreModule.dll`) |
-| **Total Types** | 28,908 |
-| **Total Methods** | 221,724 |
-| **Total Fields** | 192,577 |
-| **Total String Literals** | 86,844 |
-| **Dump Date** | 2026-09-05 |
+| **Total Types** | 28,139 |
+| **Total Methods** | 204,374 |
+| **Total Fields** | 190,387 |
+| **Total String Literals** | 88,303 |
+| **Dump Date** | 2026-10-12 |
 
 ---
 
@@ -29,8 +30,9 @@ Generated using [Il2CppDumper](https://github.com/MyDearMoon/il2cpp-Dumper) with
 | Path | Description |
 | :--- | :--- |
 | `dump.cs` | Human-readable C# pseudo-code containing class hierarchies, field memory offsets, and method RVAs |
-| `script.json` | Symbol table mapping 221,724 methods, RVAs, and signatures for disassemblers |
-| `stringliteral.json` | Index of 86,844 string literals extracted across all partitions |
+| `script.json` | Symbol table mapping methods, tokens, and signatures for disassemblers |
+| `stringliteral.json` | Index of 88,303 string literals extracted across all partitions (with credentials redacted) |
+| `dump-manifest.json` | Execution metadata, input file SHA-256 hashes, analysis mode, and exporter results |
 | `DummyDll/` | Stripped .NET assemblies (`Assembly-CSharp.dll`, `Assembly-CSharp-firstpass.dll`, `UnityEngine.CoreModule.dll`) for browsing in dnSpy / ILSpy |
 | `cpp-sdk/` | C++ headers (`il2cpp.h`, `il2cpp-init.h`, `dllmain.cpp`) with struct layouts and hook scaffolding |
 | `ida.py` | One-click symbol loader and function renamer for IDA Pro |
@@ -48,15 +50,15 @@ Mobile Legends: Bang Bang does not use a single monolithic `global-metadata.dat`
 
 1. **Partition 1 (`global-metadata.dat`)**:
    - Engine and base framework definitions (`UnityEngine.CoreModule.dll`).
-   - 5,440 types, 36,409 methods.
+   - 6,063 types, 41,758 methods.
 
 2. **Partition 2 (`global-first-metadata.dat`)**:
    - First-pass plugins and third-party native wrappers (`Assembly-CSharp-firstpass.dll`).
-   - 1,561 types, 11,218 methods.
+   - 1,701 types, 11,846 methods.
 
 3. **Partition 3 (`global-csharp-metadata.dat`)**:
    - Core gameplay, heroes, battle logic, and network handlers (`Assembly-CSharp.dll`).
-   - 21,907 types, 174,097 methods.
+   - 20,375 types, 150,770 methods.
 
 ### Cross-Partition Token Resolution
 

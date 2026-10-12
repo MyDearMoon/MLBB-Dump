@@ -1,4 +1,4 @@
-﻿# MLBB Architecture & Symbol Structure
+# MLBB Architecture & Symbol Structure
 
 A detailed technical breakdown of Mobile Legends: Bang Bang (ARM64) disassembled internals, partitioned assemblies, subsystem mappings, and symbol registries.
 
@@ -10,9 +10,9 @@ MLBB divides its code into three distinct metadata partitions to optimize loadin
 
 | Partition | Source Metadata | Target Assembly | Types | Methods | Primary Role |
 | :---: | :--- | :--- | :---: | :---: | :--- |
-| **1** | `global-metadata.dat` | `UnityEngine.CoreModule.dll` | 5,440 | 36,409 | Unity Engine base types, math, serialization, components |
-| **2** | `global-first-metadata.dat` | `Assembly-CSharp-firstpass.dll` | 1,561 | 11,218 | Native third-party plugins, platform SDKs, native bindings |
-| **3** | `global-csharp-metadata.dat` | `Assembly-CSharp.dll` | 21,907 | 174,097 | Game logic, hero definitions, combat state machine, UI, networking |
+| **1** | `global-metadata.dat` | `UnityEngine.CoreModule.dll` | 6,063 | 41,758 | Unity Engine base types, math, serialization, components |
+| **2** | `global-first-metadata.dat` | `Assembly-CSharp-firstpass.dll` | 1,701 | 11,846 | Native third-party plugins, platform SDKs, native bindings |
+| **3** | `global-csharp-metadata.dat` | `Assembly-CSharp.dll` | 20,375 | 150,770 | Game logic, hero definitions, combat state machine, UI, networking |
 
 ---
 
@@ -53,13 +53,13 @@ MLBB utilizes an extensive `IShowStruct_EventProxy_*` event broker architecture 
 ## 3. Tooling Integration & Symbols
 
 ### Symbol Database (`script.json`)
-Contains 221,724 entries mapping addresses in `libcsharp.so` to high-level signatures:
-* `Address`: Relative Virtual Address (RVA) in the native ELF binary.
+Contains 204,374 methods mapped across assemblies:
+* `Address`: Relative Virtual Address (RVA) in the native ELF binary (or UNKNOWN in metadata-only mode).
 * `Name`: Fully qualified method signature with parameters and declaring class.
 * `Signature`: Type descriptor string.
 
 ### String Literals (`stringliteral.json`)
-Contains 86,844 extracted strings from all three partitions, indexed by their token ID and partition identifier.
+Contains 88,303 extracted strings from all three partitions, indexed by their token ID and partition identifier (with cloud and private keys redacted).
 
 ### Disassembler Scripts
 * **IDA Pro (`ida.py`)**: Executes in IDAPython to label functions, set method prototypes, and create struct definitions.
