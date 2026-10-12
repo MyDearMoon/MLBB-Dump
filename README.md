@@ -51,14 +51,11 @@ Mobile Legends: Bang Bang does not use a single monolithic `global-metadata.dat`
 1. **Partition 1 (`global-metadata.dat`)**:
    - Engine and base framework definitions (`UnityEngine.CoreModule.dll`).
    - 6,063 types, 41,758 methods.
-
 2. **Partition 2 (`global-first-metadata.dat`)**:
    - First-pass plugins and third-party native wrappers (`Assembly-CSharp-firstpass.dll`).
    - 1,701 types, 11,846 methods.
-
 3. **Partition 3 (`global-csharp-metadata.dat`)**:
-   - Core gameplay, heroes, battle logic, and network handlers (`Assembly-CSharp.dll`).
-   - 20,375 types, 150,770 methods.
+   P,375 types, 150,770 methods.
 
 ### Cross-Partition Token Resolution
 
