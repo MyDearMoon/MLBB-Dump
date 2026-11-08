@@ -1,6 +1,6 @@
 {
   "ToolVersion": "1.4.0",
-  "Timestamp": "2026-10-25T15:29:32.7619023Z",
+  "Timestamp": "2026-11-08T05:57:13.9271946Z",
   "MetadataVersion": 24.3,
   "UnityVersion": "2019.4.33f1 (Moonton / MLBB HybridCLR)",
   "Architecture": "Arm64",
@@ -19,7 +19,6 @@
     "dump.cs",
     "ghidra.py",
     "ida.py",
-    "MLBB-Dump.zip",
     "README.md",
     "script.json",
     "stringliteral.json",
