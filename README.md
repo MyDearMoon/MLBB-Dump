@@ -21,7 +21,7 @@ Generated using [Il2CppDumper](https://github.com/MyDearMoon/il2cpp-Dumper) with
 | **Total Methods** | 204,374 |
 | **Total Fields** | 190,387 |
 | **Total String Literals** | 88,303 |
-| **Dump Date** | 2026-11-08 |
+| **Dump Date** | 2026-11-12 |
 
 ---
 
